@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Offline is Still alive</title>
+	<link rel="stylesheet" href="./builds/common.css">
+	<% if(isProd){ %>
+		<link rel="stylesheet" href="./builds/app.css">
+	<% } %>
+</head>
+<body class="sidebar-mini skin-blue sidebar-collapse">
+	<div id="root">
+		Root Content
+	</div>
+	<script src="./builds/vendor.bundle.js"></script>
+	<script src="./builds/bundle.js"></script>
+	<script>
+		if (typeof navigator !== 'undefined' && navigator.serviceWorker) {
+			navigator.serviceWorker.register('/sw.js')
+				.then((registration) => {
+					console.log('SW register success:', registration);
+				}).catch((error) => {
+				console.log('SW register failed:', error);
+			});
+		}
+	</script>
+</body>
+</html>

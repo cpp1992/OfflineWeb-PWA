@@ -1,0 +1,46 @@
+.component {
+	border-bottom: 1px solid #d2d6de;
+	margin: 0 0 15px 0;
+
+	&:last-child {
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
+
+	.preview {
+		border: 1px solid #DDDDDD;
+		border-radius: 3px;
+		padding: 10px;
+		margin-bottom: 10px;
+		// background: #fcfcfc;
+
+		.preview-item {
+			margin: 0 0 20px 0;
+			text-align: center;
+
+			&:last-child {
+				margin: 0;
+			}
+
+			> * {
+				text-align: left;
+			}
+		}
+	}
+
+	h1 {
+		margin: 0 0 5px 0;
+		padding: 0 0 5px 0;
+		font-size: 18px;
+		border-bottom: 1px solid #f4f4f4;
+
+		:global .fa {
+			margin-right: 5px;
+		}
+	}
+
+	h5 {
+		margin: 0 0 5px 0;
+		font-weight: bolder;
+	}
+}

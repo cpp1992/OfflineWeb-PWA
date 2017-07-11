@@ -1,0 +1,52 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true
+	},
+	"globals": {
+		"React": true
+	},
+	"plugins": [
+		"react"
+	],
+	"extends": ["eslint:recommended", "plugin:react/recommended", "airbnb"],
+
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaVersion": 7,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"modules": true,
+			"jsx": true
+		}
+	},
+
+	"rules":{
+		"default-case": 0,
+		"global-require": 0,
+		"no-console": 0,
+		"no-extend-native": ["error", { "exceptions": ["Promise"] }],
+		"no-param-reassign": 0,
+		"no-script-url": 0,
+		"no-tabs": 0,
+		"no-underscore-dangle": 0,
+		"import/no-dynamic-require": 0,
+		"import/no-extraneous-dependencies": 0,
+		"import/no-unresolved": 0,
+		"import/extensions": 0,
+		"indent": ["warn", "tab", {
+			"SwitchCase": 1
+		}],
+		"jsx-a11y/anchor-has-content": 0,
+		"jsx-a11y/no-static-element-interactions": 0,
+		"jsx-a11y/onclick-has-role": 1,
+		"react/forbid-prop-types": 0,
+		"react/jsx-indent": ["warn", "tab"],
+		"react/jsx-indent-props": ["warn", "tab"],
+		"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+		"react/no-danger": 0,
+		"react/no-multi-comp": 0,
+		"react/no-unused-prop-types": ["warn", { "skipShapeProps": true }]
+	}
+}

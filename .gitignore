@@ -1,0 +1,9 @@
+.idea
+node_modules
+npm-debug.log
+builds/
+fontSite/config/
+srvBuilds/
+process.pid
+config/server.config.js
+npm-debug.*

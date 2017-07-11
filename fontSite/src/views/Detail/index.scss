@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+.detail {
+	.preview {
+		min-height: 100px;
+		background: rgba(black, 0.1);
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		font-size: 18px;
+
+		h1 {
+			font-size: 24px;
+			margin: 0 0 20px 0;
+			padding: 0 0 10px 0;
+			border-bottom: 1px solid #999;
+		}
+
+		.table {
+			width: 100%;
+
+			.strong {
+				font-size: 24px;
+			}
+
+			th, td {
+				padding: 5px;
+			}
+
+			button {
+				width: 150px;
+				display: block;
+				margin: 5px 0;
+			}
+
+			:global(.form-group) {
+				margin: 0;
+			}
+
+			input {
+				width: 80px;
+			}
+		}
+	}
+}
